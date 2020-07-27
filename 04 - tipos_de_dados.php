@@ -43,7 +43,39 @@
     else:
         echo "É falso";
     endif;    
-        
+
+    //Array
+    echo "<hr";
+    $carros = array("Gol", "Uno", "Camaro", 12, 20.6, True);
+    var_dump($carros);
+    echo "<hr>";
+
+
+    // Object
+    class Cliente{
+        public $nome;
+        public function atribuirnome($nome){
+            $this->$nome = $nome;
+        }
+    }
+
+    $cliente = new Cliente();
+    $cliente->atribuirnome("Gustavo");
+    var_dump($cliente);
+
+    if (is_object($cliente)):
+        echo "É um objeto";
+    else:
+        echo "Não é um objeto";    
+    endif;
+    
+    //NULL
+    echo "<hr>";
+    $cidade = NULL;
+    var_dump($cidade);
+    echo "<hr>";
+
+
 
 
 ?>        
