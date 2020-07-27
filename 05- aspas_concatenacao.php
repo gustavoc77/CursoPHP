@@ -6,4 +6,4 @@
 
     echo "Meu nome é $nome <br>"; //aspas duplas interpretam as variáveis
     echo "Meu nome é \'$nome\'";
-    ?>
+?>
